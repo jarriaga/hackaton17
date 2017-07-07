@@ -1,3 +1,48 @@
+/******** GENERAL COLORS ********/
+@white: #ffffff;
+@black: #000000;
+@lightblue: #cceeff;
+@darkblue: #0099e6;
+@gray: #bababa;
+@pink: #D91C5C;
+@green: #87ffd1;
+@yellow: #fffd87;
+@red: #ff5151;
+@white_transparent: rgba(255,255,255,0.5);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
+@Roboto: 'Roboto', sans-serif;
+
 body{
     margin: 0;
+    overflow: hidden;
+    font-family: @Roboto;
+    background-color: @white;
+    .site {
+    	.container {
+    		.chart {
+				background-color: @lightblue;
+				height: 200px;
+				.fa-play {
+					color: @pink;
+					background-color: @white;
+				    border-radius: 100%;
+				    padding: 15px;
+				    margin-top: 70px;
+				}
+    		}
+    		.varlist {
+    			.context {
+    				background-color: @gray;
+    				color: @pink;
+    				border-radius: 15px;
+    				.vid-text {
+    					padding: 10px;
+
+    				}
+    			}
+    		}
+    	}
+    }
 }

@@ -6,8 +6,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 body .site header {
+  height: 100px;
+  display: block;
+  padding-top: 37px;
   position: relative;
   padding-left: 100px;
+  margin-bottom: 20px;
 }
 body .site header .logo {
   top: 0;

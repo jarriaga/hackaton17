@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="145">
+              <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -39,14 +39,14 @@
       <file leaf-file-name="style.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style/style.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+            <state relative-caret-position="360">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="graph.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="graph.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/graph.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-536">
@@ -258,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1499408904977</updated>
-      <workItem from="1499408906393" duration="7206000" />
+      <workItem from="1499408906393" duration="7513000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7206000" />
+    <option name="totallyTimeSpent" value="7513000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1596" height="979" extended-state="0" />
@@ -352,26 +352,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/graph.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-536">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-536">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="145">
+          <caret line="24" column="82" selection-start-line="24" selection-start-column="82" selection-end-line="24" selection-end-column="82" />
           <folding />
         </state>
       </provider>

@@ -7,6 +7,8 @@
     <title>HACKATON 2017</title>
     <link rel="stylesheet" href="style/bootstrap.css" />
     <link rel="stylesheet" href="style/bootstrap-theme.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css" />
     <script>
         var HACKATON = {}
     </script>
@@ -14,21 +16,44 @@
 <body>
 <div class="site">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">bootstrap.css</div>
-        </div>
         <h1>HACKATON 2017</h1>
-        <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+        <div class="row chart">
+            <div class="text-center col-md-12">
+                <span>
+                <a href=""><i class="fa fa-play" aria-hidden="true"></i></a>
+                </a>
+            </div>
+        </div>
+        <section class="varlist">
+            <h3 class=" text-center var-title">Análisis</h3>
+            <div class="context text-center ">
+                <span class="vid-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</span>
+            </div>
+        </section>
+        <section class="varitems">
+            <span class="items greens">mamá</span>
+            <span class="items greens">mamá</span>
+            <span class="items greens">mamá</span>
+            <span class="items greens">mamá</span>
+            <span class="items greens">mamá</span>
+            <span class="items yellows">mamá</span>
+            <span class="items yellows">mamá</span>
+            <span class="items yellows">mamá</span>
+            <span class="items yellows">mamá</span>
+            <span class="items yellows">mamá</span>
+            <span class="items reds">mamá</span>
+            <span class="items reds">mamá</span>
+            <span class="items reds">mamá</span>
+            <span class="items reds">mamá</span>
+            <span class="items reds">mamá</span>
+        </section>
     </div>
 </div>
 <script src="scripts/libs/jquery-3.2.1.min.js"></script>
-<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="scripts/main.js"></script>
-<script src="scripts/graph.js"></script>
 <script>
     $(document).ready(function(){
         HACKATON.main.init();
-        HACKATON.graph.init();
     })
 </script>
 </body>

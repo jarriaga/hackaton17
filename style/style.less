@@ -3,7 +3,7 @@
 @black: #000000;
 @lightblue: #cceeff;
 @darkblue: #0099e6;
-@gray: #bababa;
+@gray: #cccccc;
 @pink: #D91C5C;
 @green: #87ffd1;
 @yellow: #fffd87;
@@ -18,11 +18,14 @@ body{
     margin: 0;
     overflow: hidden;
     font-family: @Roboto;
-    background-color: @white;
+    background-color: @lightblue;
     .site {
     	.container {
+            h1 {
+               color: @pink; 
+            }
     		.chart {
-				background-color: @lightblue;
+				background-color: @darkblue;
 				height: 200px;
 				.fa-play {
 					color: @pink;
@@ -33,8 +36,11 @@ body{
 				}
     		}
     		.varlist {
+                .var-title {
+                    color: @pink; 
+                }
     			.context {
-    				background-color: @gray;
+    				background-color: @white;
     				color: @pink;
     				border-radius: 15px;
     				.vid-text {
@@ -43,6 +49,26 @@ body{
     				}
     			}
     		}
+            .varitems {
+                margin-top: 30px;
+                .items {
+                    width: auto;
+                    height: 25px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-radius: 45%;
+                    color: @darkblue;
+                    &.greens {
+                        background-color: @green;
+                    }
+                    &.yellows {
+                        background-color: @yellow;
+                    }
+                    &.reds {
+                        background-color: @pink;
+                    }                   
+                }
+            }
     	}
     }
 }

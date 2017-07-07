@@ -13,13 +13,33 @@
 
 @white_transparent: rgba(255,255,255,0.5);
 
+/******** TRANSITIONS ********/
+.hvr-grow{
+  //display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+  cursor: pointer;
+  &:hover, &:active {
+      -webkit-transform: scale(1.07);
+      transform: scale(1.07);
+      cursor: pointer;
+  }
+}
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
 @Roboto: 'Roboto', sans-serif;
 
 body{
     margin: 0;
-    overflow: hidden;
     font-family: @Roboto;
     //background-color: @lightblue;
     .site {

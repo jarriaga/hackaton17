@@ -19,9 +19,13 @@ HACKATON.graph = (function(){
 
 
     var _initVars = function _initVars(){
-        Highcharts.chart('container', {
+
+        Highcharts.chart('containerGraph', {
             chart: {
-                zoomType: 'x'
+                zoomType: 'x',
+                style: {
+                    fontFamily: 'Roboto'
+                }
             },
             title: {
                 text: 'Analisis de terapia'
@@ -57,8 +61,8 @@ HACKATON.graph = (function(){
                             y2: 1
                         },
                         stops: [
-                            [0, '#f58236'],
-                            [1, '#27a3e6']
+                            [0, '#406ad2'],
+                            [1, '#74b0ec']
                         ]
                     },
                     marker: {
@@ -69,6 +73,9 @@ HACKATON.graph = (function(){
                         hover: {
                             lineWidth: 1
                         }
+                    },
+                    animation: {
+                        duration: 2000
                     },
                     threshold: null
                 }
@@ -98,7 +105,6 @@ HACKATON.graph = (function(){
                 enabled: false
             }
         });
-
     };
 
     return {

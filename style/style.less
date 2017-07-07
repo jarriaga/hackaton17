@@ -4,10 +4,13 @@
 @lightblue: #74b0ec;
 @darkblue: #406ad2;
 @gray: #cccccc;
+@darkgray: #7a7a7a;
 @pink: #D91C5C;
-@green: #87ffd1;
-@yellow: #fffd87;
-@red: #ff5151;
+
+@tag-1: #389c55;
+@tag-2: #486c9c;
+@tag-3: #cc2316;
+
 @white_transparent: rgba(255,255,255,0.5);
 
 // Fonts
@@ -23,7 +26,7 @@ body{
         header{
             height: 100px;
             display: block;
-            padding-top: 37px;
+            padding-top: 28px;
             position: relative;
             padding-left: 100px;
             margin-bottom: 20px;
@@ -41,8 +44,26 @@ body{
                 color: @black;
                 display: block;
                 font-size: 26px;
+                position: relative;
+                padding-bottom: 10px;
                 letter-spacing: 0.5px;
                 text-transform: uppercase;
+                //span{
+                //    color: #FFF;
+                //    padding: 0 4px;
+                //    display: inline-block;
+                //    background: @darkblue;
+                //    vertical-align: middle;
+                //}
+                &:before{
+                    content: '';
+                    left: 0;
+                    bottom: 6px;
+                    width: 40px;
+                    height: 2px;
+                    position: absolute;
+                    background: @darkblue;
+                }
             }
             .number-sesion, .date{
                 display: inline-block;
@@ -58,52 +79,89 @@ body{
                 text-transform: uppercase;
             }
         }
-    	.container {
-    		.chart {
-				background-color: @darkblue;
-				height: 200px;
-				.fa-play {
-					color: @pink;
-					background-color: @white;
-				    border-radius: 100%;
-				    padding: 15px;
-				    margin-top: 70px;
-				}
-    		}
-    		.varlist {
-                .var-title {
-                    color: @pink; 
-                }
-    			.context {
-    				background-color: @white;
-    				color: @pink;
-    				border-radius: 15px;
-    				.vid-text {
-    					padding: 10px;
 
-    				}
-    			}
-    		}
-            .varitems {
-                margin-top: 30px;
-                .items {
-                    width: auto;
-                    height: 25px;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    border-radius: 45%;
+
+        .graph{
+            position: relative;
+            .play-btn{
+                z-index: 9;
+                right: 0;
+                bottom: 10px;
+                width: 50px;
+                height: 50px;
+                box-shadow: 0 0 25px rgba(0,0,0,0.2);
+                font-size: 20px;
+                padding: 10px 0 10px 5px;
+                background: #FFF;
+                overflow: hidden;
+                border-radius: 50%;
+                position: absolute;
+                text-align: center;
+                border: 1px solid @darkblue;
+                i{
                     color: @darkblue;
-                    &.greens {
-                        background-color: @green;
-                    }
-                    &.yellows {
-                        background-color: @yellow;
-                    }
-                    &.reds {
-                        background-color: @pink;
-                    }                   
                 }
             }
-    	}
+        }
+        .graph-subtitle{
+            width: 100%;
+            display: block;
+            font-size: 20px;
+            padding: 15px 0;
+            color: @darkgray;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+            span{
+                margin: 0 auto;
+                position: relative;
+                display: inline-block;
+                &:after, &:before{
+                    content: ' " ';
+                    top: -23px;
+                    font-size: 60px;
+                    position: absolute;
+                    color: @darkgray;
+                }
+                &:after{
+                    left: -30px;
+                }
+                &:before{
+                    right: -20px;
+                }
+            }
+        }
+
+        .varitems{
+            h3{
+                margin: 0;
+                font-size: 28px;
+                letter-spacing: 0.2px;
+            }
+            .group{
+                display: block;
+                margin-top: 20px;
+                .items {
+                    color: #FFF;
+                    font-size: 18px;
+                    padding: 7px 20px;
+                    line-height: 120%;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    &.greens {
+                        background-color: @tag-1;
+                    }
+                    &.yellows {
+                        background-color: @tag-2;
+                    }
+                    &.reds {
+                        background-color: @tag-3;
+                    }
+                }
+            }
+
+        }
     }
 }

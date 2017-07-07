@@ -8,7 +8,7 @@ body {
 body .site header {
   height: 100px;
   display: block;
-  padding-top: 37px;
+  padding-top: 28px;
   position: relative;
   padding-left: 100px;
   margin-bottom: 20px;
@@ -27,8 +27,19 @@ body .site header .user {
   color: #000000;
   display: block;
   font-size: 26px;
+  position: relative;
+  padding-bottom: 10px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+body .site header .user:before {
+  content: '';
+  left: 0;
+  bottom: 6px;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  background: #406ad2;
 }
 body .site header .number-sesion,
 body .site header .date {
@@ -44,45 +55,82 @@ body .site header .date {
   font-size: 14px;
   text-transform: uppercase;
 }
-body .site .container .chart {
-  background-color: #406ad2;
-  height: 200px;
+body .site .graph {
+  position: relative;
 }
-body .site .container .chart .fa-play {
-  color: #D91C5C;
-  background-color: #ffffff;
-  border-radius: 100%;
-  padding: 15px;
-  margin-top: 70px;
+body .site .graph .play-btn {
+  z-index: 9;
+  right: 0;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  padding: 10px 0 10px 5px;
+  background: #FFF;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  text-align: center;
+  border: 1px solid #406ad2;
 }
-body .site .container .varlist .var-title {
-  color: #D91C5C;
-}
-body .site .container .varlist .context {
-  background-color: #ffffff;
-  color: #D91C5C;
-  border-radius: 15px;
-}
-body .site .container .varlist .context .vid-text {
-  padding: 10px;
-}
-body .site .container .varitems {
-  margin-top: 30px;
-}
-body .site .container .varitems .items {
-  width: auto;
-  height: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 45%;
+body .site .graph .play-btn i {
   color: #406ad2;
 }
-body .site .container .varitems .items.greens {
-  background-color: #87ffd1;
+body .site .graph-subtitle {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  padding: 15px 0;
+  color: #7a7a7a;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
 }
-body .site .container .varitems .items.yellows {
-  background-color: #fffd87;
+body .site .graph-subtitle span {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
 }
-body .site .container .varitems .items.reds {
-  background-color: #D91C5C;
+body .site .graph-subtitle span:after,
+body .site .graph-subtitle span:before {
+  content: ' " ';
+  top: -23px;
+  font-size: 60px;
+  position: absolute;
+  color: #7a7a7a;
+}
+body .site .graph-subtitle span:after {
+  left: -30px;
+}
+body .site .graph-subtitle span:before {
+  right: -20px;
+}
+body .site .varitems h3 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 0.2px;
+}
+body .site .varitems .group {
+  display: block;
+  margin-top: 20px;
+}
+body .site .varitems .group .items {
+  color: #FFF;
+  font-size: 18px;
+  padding: 7px 20px;
+  line-height: 120%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+body .site .varitems .group .items.greens {
+  background-color: #389c55;
+}
+body .site .varitems .group .items.yellows {
+  background-color: #486c9c;
+}
+body .site .varitems .group .items.reds {
+  background-color: #cc2316;
 }

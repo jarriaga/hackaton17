@@ -21,49 +21,54 @@
                 <img src="self-logo.png" alt="SELF">
             </div>
             <div class="description">
-                <div class="user">Hector Armenta</div>
+                <div class="user">Hector <span>Armenta</span></div>
                 <div class="number-sesion">Sensión 2</div><div class="date">Sábado 8 JUN 2017</div>
             </div>
         </header>
 
         <div class="graph">
-            <div id="container"></div>
+            <a href="#" class="play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+            <div id="containerGraph" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
         </div>
-        <div class="row chart">
-            <div class="text-center col-md-12">
-                <a href="#" class="play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
-            </div>
+
+        <div class="graph-subtitle">
+            <span>Hubo un momento en el que no sabía que estaba pasando en casa</span>
         </div>
-        <section class="varlist">
-            <h3 class=" text-center var-title">Análisis</h3>
-            <div class="context text-center ">
-                <span class="vid-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</span>
-            </div>
-        </section>
+    </div>
+    <hr class="division">
+    <div class="container">
         <section class="varitems">
-            <span class="items greens">mamá</span>
-            <span class="items greens">mamá</span>
-            <span class="items greens">mamá</span>
-            <span class="items greens">mamá</span>
-            <span class="items greens">mamá</span>
-            <span class="items yellows">mamá</span>
-            <span class="items yellows">mamá</span>
-            <span class="items yellows">mamá</span>
-            <span class="items yellows">mamá</span>
-            <span class="items yellows">mamá</span>
-            <span class="items reds">mamá</span>
-            <span class="items reds">mamá</span>
-            <span class="items reds">mamá</span>
-            <span class="items reds">mamá</span>
-            <span class="items reds">mamá</span>
+            <h3>Análisis</h3>
+            <p>Las palabras claves de esta grabación se dividen en categorias dependiendo el volumen de voz</p>
+            <div class="group">
+                <span class="items greens">mamá</span>
+                <span class="items greens">escuela</span>
+                <span class="items greens">camino</span>
+                <span class="items greens">casa</span>
+                <span class="items greens">dormido</span>
+
+                <span class="items yellows">comer</span>
+                <span class="items yellows">solo</span>
+                <span class="items yellows">mirada</span>
+                <span class="items yellows">alcohol</span>
+
+
+                <span class="items reds">papa</span>
+                <span class="items reds">borracho</span>
+                <span class="items reds">gritando</span>
+                <span class="items reds">temor</span>
+            </div>
         </section>
     </div>
 </div>
 <script src="scripts/libs/jquery-3.2.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/graph.js"></script>
 <script>
     $(document).ready(function(){
         HACKATON.main.init();
+        HACKATON.graph.init();
     })
 </script>
 </body>

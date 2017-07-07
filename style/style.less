@@ -1,8 +1,8 @@
 /******** GENERAL COLORS ********/
 @white: #ffffff;
 @black: #000000;
-@lightblue: #cceeff;
-@darkblue: #0099e6;
+@lightblue: #74b0ec;
+@darkblue: #406ad2;
 @gray: #cccccc;
 @pink: #D91C5C;
 @green: #87ffd1;
@@ -18,12 +18,43 @@ body{
     margin: 0;
     overflow: hidden;
     font-family: @Roboto;
-    background-color: @lightblue;
+    //background-color: @lightblue;
     .site {
-    	.container {
-            h1 {
-               color: @pink; 
+        header{
+            position: relative;
+            padding-left: 100px;
+            .logo{
+                top: 0;
+                left: 0;
+                height: 100px;
+                position: absolute;
+                img{
+                    height: 100%;
+                    display: block;
+                }
             }
+            .user{
+                color: @black;
+                display: block;
+                font-size: 26px;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+            }
+            .number-sesion, .date{
+                display: inline-block;
+                vertical-align: bottom;
+            }
+            .number-sesion{
+                font-size: 18px;
+                margin-right: 10px;
+            }
+            .date{
+                color: @gray;
+                font-size: 14px;
+                text-transform: uppercase;
+            }
+        }
+    	.container {
     		.chart {
 				background-color: @darkblue;
 				height: 200px;

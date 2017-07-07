@@ -1,1 +1,84 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,600,700);body{margin:0;overflow:hidden;font-family:Roboto,sans-serif;background-color:#cef}body .site .container h1{color:#d91c5c}body .site .container .chart{background-color:#0099e6;height:200px}body .site .container .chart .fa-play{color:#d91c5c;background-color:#fff;border-radius:100%;padding:15px;margin-top:70px}body .site .container .varlist .var-title{color:#d91c5c}body .site .container .varlist .context{background-color:#fff;color:#d91c5c;border-radius:15px}body .site .container .varlist .context .vid-text{padding:10px}body .site .container .varitems{margin-top:30px}body .site .container .varitems .items{width:auto;height:25px;padding-left:10px;padding-right:10px;border-radius:45%;color:#0099e6}body .site .container .varitems .items.greens{background-color:#87ffd1}body .site .container .varitems .items.yellows{background-color:#fffd87}body .site .container .varitems .items.reds{background-color:#d91c5c}
+/******** GENERAL COLORS ********/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,600,700');
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+body .site header {
+  position: relative;
+  padding-left: 100px;
+}
+body .site header .logo {
+  top: 0;
+  left: 0;
+  height: 100px;
+  position: absolute;
+}
+body .site header .logo img {
+  height: 100%;
+  display: block;
+}
+body .site header .user {
+  color: #000000;
+  display: block;
+  font-size: 26px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+body .site header .number-sesion,
+body .site header .date {
+  display: inline-block;
+  vertical-align: bottom;
+}
+body .site header .number-sesion {
+  font-size: 18px;
+  margin-right: 10px;
+}
+body .site header .date {
+  color: #cccccc;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+body .site .container .chart {
+  background-color: #406ad2;
+  height: 200px;
+}
+body .site .container .chart .fa-play {
+  color: #D91C5C;
+  background-color: #ffffff;
+  border-radius: 100%;
+  padding: 15px;
+  margin-top: 70px;
+}
+body .site .container .varlist .var-title {
+  color: #D91C5C;
+}
+body .site .container .varlist .context {
+  background-color: #ffffff;
+  color: #D91C5C;
+  border-radius: 15px;
+}
+body .site .container .varlist .context .vid-text {
+  padding: 10px;
+}
+body .site .container .varitems {
+  margin-top: 30px;
+}
+body .site .container .varitems .items {
+  width: auto;
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 45%;
+  color: #406ad2;
+}
+body .site .container .varitems .items.greens {
+  background-color: #87ffd1;
+}
+body .site .container .varitems .items.yellows {
+  background-color: #fffd87;
+}
+body .site .container .varitems .items.reds {
+  background-color: #D91C5C;
+}
